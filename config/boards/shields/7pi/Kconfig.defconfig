@@ -1,0 +1,33 @@
+config ZMK_BLE
+	default y
+
+config ZMK_USB
+	default y
+
+if SHIELD_7PI_DONGLE || SHIELD_7PI_LEFT || SHIELD_7PI_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "7pi"
+
+endif
+
+
+
+if SHIELD_7PI_DONGLE_LEFT || SHIELD_7PI_DONGLE_RIGHT || SHIELD_7PI_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
+
+
+
+if SHIELD_7PI_DONGLE || SHIELD_7PI_LEFT
+
+config ZMK_SPLIT
+	default y
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
