@@ -12,4 +12,3 @@ config SHIELD_7PI_LEFT
 
 config SHIELD_7PI_RIGHT
 	def_bool $(shields_list_contains,7pi_right)
-
