@@ -1,11 +1,11 @@
 manifest:
   remotes:
-    - name: nick
-      url-base: https://github.com/nkearbey
+    - name: zmkfirmware
+      url-base: https://github.com/zmkfirmware
   projects:
     - name: zmk
-      remote: nick
-      revision: init
+      remote: zmkfirmware
+      revision: main
       import: app/west.yml
   self:
     path: config
