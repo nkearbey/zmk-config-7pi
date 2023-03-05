@@ -1,11 +1,11 @@
+config SHIELD_7PI_DONGLE
+	def_bool $(shields_list_contains,7pi_dongle)
+	
 config SHIELD_7PI_DONGLE_LEFT
 	def_bool $(shields_list_contains,7pi_dongle_left)
 
 config SHIELD_7PI_DONGLE_RIGHT
 	def_bool $(shields_list_contains,7pi_dongle_right)
-
-config SHIELD_7PI_DONGLE
-	def_bool $(shields_list_contains,7pi_dongle)
 
 config SHIELD_7PI_LEFT
 	def_bool $(shields_list_contains,7pi_left)
