@@ -1,11 +1,11 @@
 include:
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: 7pi_dongle
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: 7pi_dongle_left
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: 7pi_dongle_right
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: 7pi_left
-  - board: seeeduino_xiao_ble
+  - board: nice_nano_v2
     shield: 7pi_right
