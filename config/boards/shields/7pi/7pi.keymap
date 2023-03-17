@@ -8,7 +8,7 @@
         
        	alpha1 {
 		bindings = <
-		&kp Q       &kp W       &kp C       &kp D        &kp ESC        &kp ENTER       &kp H       &kp U       &kp Y       &kp SQT
+		U_BOOT       &kp W       &kp C       &kp D        &kp ESC        &kp ENTER       &kp H       &kp U       &kp Y      U_BOOT
         &kp A       &kp R       &kp S       &kp T                                       &kp N       &kp E       &kp I       &kp O
                                             &kp SPACE    &kp TAB        &kp DEL         &kp BSPC
 		>;
