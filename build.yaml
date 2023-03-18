@@ -9,3 +9,5 @@ include:
     shield: 7pi_left
   - board: seeeduino_xiao_ble
     shield: 7pi_right
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
