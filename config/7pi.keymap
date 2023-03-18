@@ -4,9 +4,10 @@
 
 #define ALP1 0
 #define ALP2 1
-#define NUM 2
-#define NAV 3
-#define SYMA 4
+#define ALP2U 2
+#define NUM 3
+#define NAV 4
+#define SYM 5
 
 &mt {
     tapping-term-ms = <201>;
@@ -56,13 +57,13 @@
 			compatible = "zmk,behavior-macro";
 			label = "MACRO1";
 			#binding-cells = <0>;
-			bindings = < &sl AL2 >;
+			bindings = < &sl ALP2 >;
 		};
 		caps_a2: behavior_macro_2 {
 			compatible = "zmk,behavior-macro";
 			label = "MACRO2";
 			#binding-cells = <0>;
-			bindings = < &sl AL2U >;
+			bindings = < &sl ALP2U >;
 		};
 		a2_td: tapdance {
             compatible = "zmk,behavior-hold-tap";
@@ -88,6 +89,13 @@
 		>;
         };
        	ALP2 {
+		bindings = <
+		&kp BSLH    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
+        &kp LS(A)       &kp LS(R)       &kp LS(S)       &kp LS(T)                                       &kp LS(M)      &kp LS(V)    &kp LS(K)       &kp LS(J)
+                                            &kp SPACE    &kp TAB        &none           &kp BSPC
+		>;
+		};
+		ALP2U {
 		bindings = <
 		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
         &kp A       &kp R       &kp S       &kp T                                       &kp M       &kp V       &kp K       &kp J
