@@ -105,7 +105,7 @@
        	NUM {
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9        &kp ENTER       &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
-        &kp N1       &kp N2      &kp N3      &kp N4                                     &kp EQUAL &kp MULTIPLY  &kp MINUS   &kp PLUS
+        &kp N1       &kp N2      &kp N3      &kp N4                                     &kp KP_EQUAL &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_PLUS
                                              &kp SPACE    &kp TAB        &kp DEL         &kp BSPC
 		>;
 		};
