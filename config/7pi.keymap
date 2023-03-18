@@ -17,7 +17,7 @@
      quick-release;
  };
 
-\ {
+/ {
     behaviors {
 		num_word: behavior_num_word {
 			compatible = "zmk,behavior-caps-word";
