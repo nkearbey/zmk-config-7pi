@@ -103,9 +103,9 @@
 		};
 		NAV {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9        &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
-        &kp N1       &kp N2      &kp N3      &kp N4                                     &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                                             &kp SPACE    &kp N0        &kp DEL         &kp BSPC
+		&bootloader  &kp RALT     &none       &none        &kp ESC       &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+        &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+                                              &kp SPACE    &kp N0        &kp DEL         &kp BSPC
 		>;
 		};
 		SYMA {
