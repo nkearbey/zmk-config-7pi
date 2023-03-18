@@ -62,14 +62,14 @@
        	ALP2U {
 		bindings = <
 		&kp BSLH    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
-        &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
+        &kp LS(B)   &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
                                             &kp SPACE    &kp TAB        &none           &kp BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
 		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
-        &kp A       &kp R       &kp S       &kp T                                       &kp M       &kp V       &kp K       &kp J
+        &kp B       &kp P       &kp F       &kp G                                       &kp M       &kp V       &kp K       &kp J
                                             &kp SPACE    &kp TAB        &sl ALP2U          &kp BSPC
 		>;
 		};
