@@ -21,11 +21,11 @@
 
 / {
 	macros {
-        space_tog0: space_tog_0 {
+        space_togNUM: space_togNUM {
             label = "ZM_space_tog0";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SPACE &tog 0>;
+            bindings = <&kp SPACE &tog NUM>;
         };
     };
 	combos {
@@ -153,7 +153,7 @@
 		bindings = <
 		&kp Q            &u_mt RALT W     &kp C         &kp D          &kp TAB        &kp ENTER       &kp H       &kp U       &u_mt RALT Y       &kp SQT
         &u_mt LGUI A     &u_mt LALT R     &u_mt LCTRL S &u_mt LSHFT T     							  &u_mt LSHFT N    &u_mt LCTRL E    &u_mt LALT I     &u_mt LGUI O
-                                          &u_lt NAV SPACE     &sl ALP1U               &sl ALP2        &u_lt NUM BSPC
+                                          &u_lt NAV SPACE     &sl ALP1U               &sl ALP2        &u_lt SYM BSPC
 		>;
         };
 		ALP1U {
@@ -181,7 +181,7 @@
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9            &kp ENTER       &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
         &kp N1       &kp N2      &kp N3      &kp N4                                         &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &space_tog0  &kp N0	        &kp DEL         &kp BSPC
+                                             &space_togNUM  &kp N0	        &kp DEL         &kp BSPC
 		>;
 		};
 		NAV {
