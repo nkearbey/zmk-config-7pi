@@ -56,43 +56,43 @@
         	timeout-ms = <50>;
             key-positions = <21 22>;
         	bindings = <&u_lt SYM DEL>;
-			layers = <0>
+			layers = <0>;
 		};
 		combo_esc {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
 			bindings = <&kp ESC>;
-			layers = <0>
+			layers = <0>;
 		};
 		combo_undo {
 			timeout-ms = <50>;
 			key-positions = <0 8>;
 			bindings = <&kp LC(Z)>;
-			layers = <0>
+			layers = <0>;
 		};
 		combo_cut {
 			timeout-ms = <50>;
 			key-positions = <1 8>;
 			bindings = <&kp LC(X)>;
-			layers = <0>
+			layers = <0>;
 		};
 		combo_copy {
 			timeout-ms = <50>;
 			key-positions = <2 8>;
 			bindings = <&kp LC(C)>;
-			layers = <0>
+			layers = <0>;
 		};
 		combo_paste {
 			timeout-ms = <50>;
 			key-positions = <3 8>;
 			bindings = <&kp LC(V)>;
-			layers = <0>
+			layers = <0>;
 		};
 		combo_redo {
 			timeout-ms = <50>;
 			key-positions = <4 8>;
 			bindings = <&kp LC(Y)>;
-			layers = <0>
+			layers = <0>;
 		};
 	};
 };
