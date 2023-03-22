@@ -115,14 +115,14 @@
 		bindings = <
 		&kp BSLH    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT         &kp FSLH
         &kp LS(B)   &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
-                                            &kp SPACE    &sl ALP2        &none            &kp BSPC
+                                            &kp SPACE    &none        &none            &kp BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
 		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
         &kp B       &kp P       &kp F       &kp G                                       &kp M       &kp V       &kp K       &kp J
-                                            &kp SPACE    &sl ALP2U        &none           &kp BSPC
+                                            &kp SPACE    &sl ALP2U        &none         &kp BSPC
 		>;
 		};
        	NUM {
