@@ -4,8 +4,8 @@
 
 #define ALP1 0
 #define ALP1U 1
-#define ALP2U 2
-#define ALP2 3
+#define ALP2 2
+#define ALP2U 3
 #define NUM 4
 #define NAV 5
 #define SYM 6
@@ -108,14 +108,7 @@
 		bindings = <
 		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp DEL         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp SQT
         &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
-                                                    &kp SPACE     &none         &sl ALP2U        &kp BSPC
-		>;
-		};
-       	ALP2U {
-		bindings = <
-		&kp BSLH    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT         &kp FSLH
-        &kp LS(B)   &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
-                                            &kp SPACE    &none        &none            &kp BSPC
+                                                    &kp SPACE           &none           &sl ALP2U       &kp BSPC
 		>;
 		};
 		ALP2 {
@@ -123,6 +116,13 @@
 		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
         &kp B       &kp P       &kp F       &kp G                                       &kp M       &kp V       &kp K       &kp J
                                             &kp SPACE    &sl ALP2U        &none         &kp BSPC
+		>;
+		};
+       	ALP2U {
+		bindings = <
+		&kp BSLH    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT         &kp FSLH
+        &kp LS(B)   &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
+                                                    &kp SPACE        &none          &none           &kp BSPC
 		>;
 		};
        	NUM {
