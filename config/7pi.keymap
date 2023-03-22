@@ -20,12 +20,20 @@
  };
 
 / {
+	macros {
+        space_tog0: space_tog_0 {
+            label = "ZM_space_tog0";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &tog 0>;
+        };
+    };
 	combos {
         compatible = "zmk,combos";
 		combo_sym {
         	timeout-ms = <50>;
             key-positions = <20 21>;
-        	bindings = <&u_lt SYM DEL>;
+        	bindings = <&tog NUM>;
 			layers = <0 1 2 3 4>;
 		};
 		combo_esc {
@@ -35,67 +43,67 @@
 			layers = <0 1 2 3 5>;
 		};
 		combo_undo {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <0 12>;
 			bindings = <&kp LC(Z)>;
 			layers = <0 1 2 3>;
 		};
 		combo_cut {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <1 12>;
 			bindings = <&kp LC(X)>;
 			layers = <0 1 2 3>;
 		};
 		combo_copy {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <2 12>;
 			bindings = <&kp LC(C)>;
 			layers = <0 1 2 3>;
 		};
 		combo_paste {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <3 12>;
 			bindings = <&kp LC(V)>;
 			layers = <0 1 2 3>;
 		};
 		combo_redo {
-			timeout-ms = <30>;
+			timeout-ms = <50>;
 			key-positions = <4 12>;
 			bindings = <&kp LC(Y)>;
 			layers = <0 1 2 3>;
 		};
-		combo_LPAR {
-			timeout-ms = <30>;
+		combo_lp {
+			timeout-ms = <50>;
 			key-positions = <10 11>;
 			bindings = <&kp LPAR>;
 			layers = <NUM>;
 		};
-		combo_RPAR {
-			timeout-ms = <30>;
+		combo_rp {
+			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&kp RPAR>;
 			layers = <NUM>;
 		};
-		combo_LBKT {
-			timeout-ms = <30>;
+		combo_lbk {
+			timeout-ms = <50>;
 			key-positions = <0 1>;
 			bindings = <&kp LBKT>;
 			layers = <NUM>;
 		};
-		combo_RBKT {
-			timeout-ms = <30>;
+		combo_rbk {
+			timeout-ms = <50>;
 			key-positions = <2 3>;
 			bindings = <&kp RBKT>;
 			layers = <NUM>;
 		};
-		combo_LBRC {
-			timeout-ms = <30>;
+		combo_lbc {
+			timeout-ms = <50>;
 			key-positions = <6 7>;
 			bindings = <&kp LBRC>;
 			layers = <NUM>;
 		};
-		combo_RBRC {
-			timeout-ms = <30>;
+		combo_rbc {
+			timeout-ms = <50>;
 			key-positions = <8 9>;
 			bindings = <&kp RBRC>;
 			layers = <NUM>;
@@ -172,8 +180,8 @@
        	NUM {
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9            &kp ENTER       &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
-        &kp N1       &kp N2      &kp N3      &kp N4                                         &kp KP_EQUAL &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_PLUS
-                                             &kp SPACE    &kp N0	        &kp DEL         &kp BSPC
+        &kp N1       &kp N2      &kp N3      &kp N4                                         &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
+                                             &space_tog0  &kp N0	        &kp DEL         &kp BSPC
 		>;
 		};
 		NAV {
