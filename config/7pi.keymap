@@ -30,37 +30,37 @@
 		};
 		combo_esc {
 			timeout-ms = <50>;
-			key-positions = <9 10>;
+			key-positions = <18 19>;
 			bindings = <&kp ESC>;
 			layers = <0 1 2 3 5>;
 		};
 		combo_undo {
-			timeout-ms = <50>;
-			key-positions = <0 7>;
+			timeout-ms = <20>;
+			key-positions = <0 12>;
 			bindings = <&kp LC(Z)>;
 			layers = <0>;
 		};
 		combo_cut {
-			timeout-ms = <50>;
-			key-positions = <1 7>;
+			timeout-ms = <20>;
+			key-positions = <1 12>;
 			bindings = <&kp LC(X)>;
 			layers = <0>;
 		};
 		combo_copy {
-			timeout-ms = <50>;
-			key-positions = <2 7>;
+			timeout-ms = <20>;
+			key-positions = <2 12>;
 			bindings = <&kp LC(C)>;
 			layers = <0>;
 		};
 		combo_paste {
-			timeout-ms = <50>;
-			key-positions = <3 7>;
+			timeout-ms = <20>;
+			key-positions = <3 12>;
 			bindings = <&kp LC(V)>;
 			layers = <0>;
 		};
 		combo_redo {
-			timeout-ms = <50>;
-			key-positions = <4 7>;
+			timeout-ms = <20>;
+			key-positions = <4 12>;
 			bindings = <&kp LC(Y)>;
 			layers = <0>;
 		};
