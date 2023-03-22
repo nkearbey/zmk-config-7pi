@@ -25,7 +25,7 @@
 		combo_sym {
         	timeout-ms = <50>;
             key-positions = <20 21>;
-        	bindings = <&u_lt SYM DEL>;
+        	bindings = <&num_word>;
 			layers = <0 1 2 3 4>;
 		};
 		combo_esc {
@@ -35,34 +35,70 @@
 			layers = <0 1 2 3 5>;
 		};
 		combo_undo {
-			timeout-ms = <20>;
+			timeout-ms = <30>;
 			key-positions = <0 12>;
 			bindings = <&kp LC(Z)>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_cut {
-			timeout-ms = <20>;
+			timeout-ms = <30>;
 			key-positions = <1 12>;
 			bindings = <&kp LC(X)>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_copy {
-			timeout-ms = <20>;
+			timeout-ms = <30>;
 			key-positions = <2 12>;
 			bindings = <&kp LC(C)>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_paste {
-			timeout-ms = <20>;
+			timeout-ms = <30>;
 			key-positions = <3 12>;
 			bindings = <&kp LC(V)>;
-			layers = <0>;
+			layers = <0 1 2 3>;
 		};
 		combo_redo {
-			timeout-ms = <20>;
+			timeout-ms = <30>;
 			key-positions = <4 12>;
 			bindings = <&kp LC(Y)>;
-			layers = <0>;
+			layers = <0 1 2 3>;
+		};
+		combo_LPAR {
+			timeout-ms = <30>;
+			key-positions = <10 11>;
+			bindings = <&kp LPAR>;
+			layers = <NUM>;
+		};
+		combo_RPAR {
+			timeout-ms = <30>;
+			key-positions = <12 13>;
+			bindings = <&kp RPAR>;
+			layers = <NUM>;
+		};
+		combo_LBKT {
+			timeout-ms = <30>;
+			key-positions = <0 1>;
+			bindings = <&kp LBKT>;
+			layers = <NUM>;
+		};
+		combo_RBKT {
+			timeout-ms = <30>;
+			key-positions = <2 3>;
+			bindings = <&kp RBKT>;
+			layers = <NUM>;
+		};
+		combo_LBRC {
+			timeout-ms = <30>;
+			key-positions = <6 7>;
+			bindings = <&kp LBRC>;
+			layers = <NUM>;
+		};
+		combo_RBRC {
+			timeout-ms = <30>;
+			key-positions = <8 9>;
+			bindings = <&kp RBRC>;
+			layers = <NUM>;
 		};
 	};
 
@@ -92,42 +128,50 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+		num_word: behavior_num_word {
+        	compatible = "zmk,behavior-caps-word";
+        	label = "NUM_WORD";
+        	#binding-cells = <0>;
+        	layers = <NUM>;
+        	continue-list = <BACKSPACE DELETE DOT COMMA KP_EQUAL KP_DIVIDE KP_MULTIPLY KP_MINUS LEFT RIGHT LPAR RPAR LBKT RBKT LBRC RBRC>;
+        	ignore-numbers;
+		  };
 	};
 
-     keymap {
-        compatible = "zmk,keymap";
+    keymap {
+    	compatible = "zmk,keymap";
         
        	ALP1 {
 		bindings = <
 		&kp Q            &u_mt RALT W     &kp C         &kp D          &kp TAB        &kp ENTER       &kp H       &kp U       &u_mt RALT Y       &kp SQT
         &u_mt LGUI A     &u_mt LALT R     &u_mt LCTRL S &u_mt LSHFT T     							  &u_mt LSHFT N    &u_mt LCTRL E    &u_mt LALT I     &u_mt LGUI O
-                                          &u_lt NAV SPACE     &sl ALP1U               &sl ALP2        &u_lt NUM BSPC
+                                          &u_lt NAV SPACE     &sl ALP1U               &sl ALP2        &u_lt SYM BSPC
 		>;
         };
 		ALP1U {
 		bindings = <
-		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp DEL         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp SQT
+		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp DEL         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
         &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
                                                     &kp SPACE           &none           &sl ALP2U       &kp BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
-		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT     &kp FSLH
+		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
         &kp B       &kp P       &kp F       &kp G                                       &kp M       &kp V       &kp K       &kp J
                                             &kp SPACE    &sl ALP2U        &none         &kp BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&kp BSLH    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp SEMI    &kp COMMA   &kp DOT         &kp FSLH
-        &kp LS(B)   &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
-                                                    &kp SPACE        &none          &none           &kp BSPC
+		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER     &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
+        &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
+                                                        &kp SPACE        &none          &none           &kp BSPC
 		>;
 		};
        	NUM {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9        &kp KP_ENTER       &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
+		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9        &kp ENTER       &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
         &kp N1       &kp N2      &kp N3      &kp N4                                     &kp KP_EQUAL &kp KP_MULTIPLY  &kp KP_MINUS   &kp KP_PLUS
                                              &kp SPACE    &kp N0	        &kp DEL         &kp BSPC
 		>;
