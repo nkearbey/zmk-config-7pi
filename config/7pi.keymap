@@ -23,12 +23,19 @@
             #binding-cells = <0>;
             bindings = <&kp SPACE &tog NUM>;
         };
+		enter_togNUM: enter_togNUM {
+            label = "ZM_enter_tog0";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp ENTER &tog NUM>;
+        };
     };
+	
 	combos {
         compatible = "zmk,combos";
 		combo_num {
         	timeout-ms = <30>;
-            key-positions = <16 17>;
+            key-positions = <4 13>;
         	bindings = <&tog NUM>;
 			layers = <0 1 2 3 4>;
 		};
@@ -90,13 +97,11 @@
 			timeout-ms = <50>;
 			key-positions = <10 11>;
 			bindings = <&kp LPAR>;
-			layers = <NUM>;
 		};
 		combo_rp {
 			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&kp RPAR>;
-			layers = <NUM>;
 		};
 		combo_lbk {
 			timeout-ms = <50>;
@@ -150,14 +155,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-		//num_word: behavior_num_word {
-        //	compatible = "zmk,behavior-caps-word";
-        //	label = "NUM_WORD";
-        //	#binding-cells = <0>;
-        //	layers = <NUM>;
-        //	continue-list = <BACKSPACE DELETE DOT COMMA KP_EQUAL KP_DIVIDE KP_MULTIPLY KP_MINUS LEFT RIGHT LPAR RPAR LBKT RBKT LBRC RBRC>;
-        //	ignore-numbers;
-		//  };
 	};
 
     keymap {
@@ -200,7 +197,7 @@
 		};
 		NAV {
 		bindings = <
-		&bootloader  &kp RALT     &none       &none        &kp ESC       &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+		&td none bootloader  &kp RALT     &none       &none        &kp ESC       &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
         &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                                               &kp SPACE    &kp TAB        &kp DEL         &kp BSPC
 		>;
