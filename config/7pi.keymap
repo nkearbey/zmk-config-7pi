@@ -158,14 +158,14 @@
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
     	};
-		td: tapdance {
+		tdboot: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
             #binding-cells = <2>;
             tapping-term-ms = <190>;
             quick-tap-ms = <250>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
+            bindings = <&none>, <&bootloader>;
         };
 	};
 
@@ -209,8 +209,8 @@
 		};
 		NAV {
 		bindings = <
-		&td none bootloader  &kp RALT     &none       &none        &kp ESC       &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
-        &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                  &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+		&tdboot      &kp RALT     &none       &none        &kp ESC        &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+        &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                                               &kp SPACE    &kp TAB        &kp DEL         &kp BSPC
 		>;
 		};
