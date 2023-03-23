@@ -35,7 +35,7 @@
         compatible = "zmk,combos";
 		combo_num {
         	timeout-ms = <30>;
-            key-positions = <11 12>;
+            key-positions = <10 11 12>;
         	bindings = <&tog NUM>;
 			layers = <0 1 2 3 4>;
 		};
