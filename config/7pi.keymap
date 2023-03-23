@@ -127,6 +127,18 @@
 			bindings = <&kp RBRC>;
 			layers = <NUM>;
 		};
+		combo_caret {
+			timeout-ms = <50>;
+			key-positions = <14 15>;
+			bindings = <&kp CARET>;
+			layers = <NUM>;
+		};
+		combo_divide {
+			timeout-ms = <50>;
+			key-positions = <16 17>;
+			bindings = <&kp FSLH>;
+			layers = <NUM>;
+		};
 	};
 
     behaviors {
