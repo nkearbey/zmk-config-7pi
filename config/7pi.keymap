@@ -14,10 +14,6 @@
     tapping-term-ms = <201>;
     flavor = "tap-preferred";
  };
-&sk {
-     release-after-ms = <2000>;
-     quick-release;
- };
 
 / {
 	macros {
@@ -30,7 +26,13 @@
     };
 	combos {
         compatible = "zmk,combos";
-		combo_sym {
+		combo_num {
+        	timeout-ms = <30>;
+            key-positions = <16 17>;
+        	bindings = <&tog NUM>;
+			layers = <0 1 2 3 4>;
+		};
+		combo_del {
         	timeout-ms = <50>;
             key-positions = <20 21>;
         	bindings = <&tog NUM>;
@@ -70,6 +72,18 @@
 			timeout-ms = <50>;
 			key-positions = <4 12>;
 			bindings = <&kp LC(Y)>;
+			layers = <0 1 2 3>;
+		};
+		combo_find {
+			timeout-ms = <50>;
+			key-positions = <7 15>;
+			bindings = <&kp LC(F)>;
+			layers = <0 1 2 3>;
+		};
+		combo_print {
+			timeout-ms = <50>;
+			key-positions = <6 15>;
+			bindings = <&kp LC(P)>;
 			layers = <0 1 2 3>;
 		};
 		combo_lp {
