@@ -99,7 +99,7 @@
 			bindings = <&kp LPAR>;
 		};
 		combo_rp {
-			timeout-ms = <80>;
+			timeout-ms = <50>;
 			key-positions = <12 13>;
 			bindings = <&kp RPAR>;
 		};
