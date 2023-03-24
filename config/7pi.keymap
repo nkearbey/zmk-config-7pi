@@ -211,7 +211,7 @@
 		};
 		SYM {
 		bindings = <
-		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &kp GRAVE        &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &kp GRAVE        &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &bootloader
         &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                                                  &kp TILDE    &kp UNDERSCORE   &kp DEL         &kp BSPC
 		>;
