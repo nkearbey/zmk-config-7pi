@@ -153,14 +153,6 @@
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
     	};
-		nav_num: u_lt {
-      		compatible = "zmk,behavior-hold-tap";
-      		label = "u_lt";
-      		#binding-cells = <2>;
-      		tapping_term_ms = <201>;
-      		flavor = "tap-preferred";
-      		bindings = <&mo NAV>, <&space_togNUM>;
-    	};
 		td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
@@ -205,10 +197,10 @@
 		};
        	NUM {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9            &enter_togNUM   &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
-        &kp N1       &kp N2      &kp N3      &kp N4                                         &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &nav_num     &kp N0	        &kp DEL         &u_lt SYM BSPC
-		>;
+		&kp N5       &kp N6      &kp N7      &kp N8            &kp N9           &enter_togNUM   &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
+        &kp N1       &kp N2      &kp N3      &kp N4                                             &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
+                                             &space_togNUM     &kp N0	        &u_lt NAV DEL         &u_lt SYM BSPC
+		>
 		};
 		NAV {
 		bindings = <
