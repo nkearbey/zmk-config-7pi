@@ -34,16 +34,9 @@
 	combos {
         compatible = "zmk,combos";
 		combo_num {
-        	timeout-ms = <30>;
-            key-positions = <1 2 3>;
-        	bindings = <&tog NUM>;
-			layers = <0 1 2 3 4>;
-		};
-		combo_del {
         	timeout-ms = <50>;
             key-positions = <20 21>;
         	bindings = <&tog NUM>;
-			layers = <0 1 2 3 4>;
 		};
 		combo_esc {
 			timeout-ms = <50>;
@@ -93,6 +86,12 @@
 			bindings = <&kp LC(P)>;
 			layers = <0 1 2 3>;
 		};
+		combo_lock {
+			timeout-ms = <50>;
+			key-positions = <3 10>;
+			bindings = <&kp LC(L)>;
+			layers = <0 1 2 3>;
+		};		
 		combo_lp {
 			timeout-ms = <50>;
 			key-positions = <10 11>;
@@ -107,25 +106,21 @@
 			timeout-ms = <50>;
 			key-positions = <0 1>;
 			bindings = <&kp LBKT>;
-			layers = <NUM>;
 		};
 		combo_rbk {
 			timeout-ms = <50>;
 			key-positions = <2 3>;
 			bindings = <&kp RBKT>;
-			layers = <NUM>;
 		};
 		combo_lbc {
 			timeout-ms = <50>;
 			key-positions = <6 7>;
 			bindings = <&kp LBRC>;
-			layers = <NUM>;
 		};
 		combo_rbc {
 			timeout-ms = <50>;
 			key-positions = <8 9>;
 			bindings = <&kp RBRC>;
-			layers = <NUM>;
 		};
 		combo_caret {
 			timeout-ms = <50>;
@@ -157,6 +152,14 @@
       		tapping_term_ms = <201>;
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
+    	};
+		nav_num: u_lt {
+      		compatible = "zmk,behavior-hold-tap";
+      		label = "u_lt";
+      		#binding-cells = <2>;
+      		tapping_term_ms = <201>;
+      		flavor = "tap-preferred";
+      		bindings = <&mo NAV>, <&space_togNUM>;
     	};
 		td: tapdance {
             compatible = "zmk,behavior-hold-tap";
@@ -204,7 +207,7 @@
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8       &kp N9            &enter_togNUM   &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
         &kp N1       &kp N2      &kp N3      &kp N4                                         &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &space_togNUM  &kp N0	        &kp DEL         &kp BSPC
+                                             &nav_num     &kp N0	        &kp DEL         &u_lt SYM BSPC
 		>;
 		};
 		NAV {
