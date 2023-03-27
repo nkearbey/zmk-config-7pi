@@ -153,6 +153,14 @@
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
     	};
+		u_lm: u_lm {
+      		compatible = "zmk,behavior-hold-tap";
+      		label = "u_lm";
+      		#binding-cells = <2>;
+      		tapping_term_ms = <201>;
+      		flavor = "tap-preferred";
+      		bindings = <&mo>, <&space_togNUM>;
+    	};
 		td: tapdance {
             compatible = "zmk,behavior-hold-tap";
             label = "TAPDANCE";
@@ -169,9 +177,9 @@
         
        	ALP1 {
 		bindings = <
-		&kp Q            &u_mt RALT W     &kp C         &kp D          &kp TAB        &kp ENTER       &kp H       &kp U       &u_mt RALT Y       &kp SQT
-        &u_mt LGUI A     &u_mt LALT R     &u_mt LCTRL S &u_mt LSHFT T     							  &u_mt LSHFT N    &u_mt LCTRL E    &u_mt LALT I     &u_mt LGUI O
-                                          &u_lt NAV SPACE     &sl ALP1U               &sl ALP2        &u_lt SYM BSPC
+		&kp Q            &u_mt RALT W     &kp C               &kp D             &kp TAB        &kp ENTER       &kp H            &kp U            &u_mt RALT Y     &kp SQT
+        &u_mt LGUI A     &u_mt LALT R     &u_mt LCTRL S       &u_mt LSHFT T     							   &u_mt LSHFT N    &u_mt LCTRL E    &u_mt LALT I     &u_mt LGUI O
+                                                              &u_lt NAV SPACE   &sl ALP1U      &sl ALP2        &u_lt SYM BSPC
 		>;
         };
 		ALP1U {
@@ -183,14 +191,14 @@
 		};
 		ALP2 {
 		bindings = <
-		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL        &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
-        &kp B       &kp P       &kp F       &kp G                                       &kp M       &kp V       &kp K       &kp J
-                                            &kp SPACE    &sl ALP2U        &none         &kp BSPC
+		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL          &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
+        &kp B       &kp P       &kp F       &kp G                                         &kp M       &kp V       &kp K       &kp J
+                                            &kp SPACE    &sl ALP2U        &none           &kp BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER     &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
+		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
         &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)   &kp LS(V)   &kp LS(K)       &kp LS(J)
                                                         &kp SPACE        &none          &none           &kp BSPC
 		>;
@@ -198,8 +206,8 @@
        	NUM {
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8            &kp N9               &enter_togNUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
-        &kp N1       &kp N2      &kp N3      &kp N4                                             &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &space_togNUM     &u_lt NAV N0	        &kp DEL         &u_lt SYM BSPC
+        &kp N1       &kp N2      &kp N3      &kp N4                                                         &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
+                                             &u_lm NAV 0    &u_lt NAV N0	        &kp DEL         &u_lt SYM BSPC
 		>;
 		};
 		NAV {
