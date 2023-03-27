@@ -197,9 +197,9 @@
 		};
        	NUM {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &kp N8            &kp N9           &enter_togNUM   &kp LEFT    &kp COMMA   &kp DOT     &kp RIGHT
+		&kp N5       &kp N6      &kp N7      &kp N8            &kp N9               &enter_togNUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
         &kp N1       &kp N2      &kp N3      &kp N4                                             &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &space_togNUM     &kp N0	        &u_lt NAV DEL         &u_lt SYM BSPC
+                                             &mt NAV space_togNUM     &u_lt NAV N0	        &kp DEL         &u_lt SYM BSPC
 		>;
 		};
 		NAV {
@@ -211,8 +211,8 @@
 		};
 		SYM {
 		bindings = <
-		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &kp GRAVE        &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &bootloader
-        &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
+		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &kp GRAVE        &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
+        &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
                                                  &kp TILDE    &kp UNDERSCORE   &kp DEL         &kp BSPC
 		>;
 		};
