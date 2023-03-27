@@ -9,6 +9,7 @@
 #define NUM 4
 #define NAV 5
 #define SYM 6
+#define FUN 7
 
 &mt {
     tapping-term-ms = <201>;
