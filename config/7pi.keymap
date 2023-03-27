@@ -199,7 +199,7 @@
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8            &kp N9               &enter_togNUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
         &kp N1       &kp N2      &kp N3      &kp N4                                             &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &mt NAV space_togNUM     &u_lt NAV N0	        &kp DEL         &u_lt SYM BSPC
+                                             &space_togNUM     &u_lt NAV N0	        &kp DEL         &u_lt SYM BSPC
 		>;
 		};
 		NAV {
