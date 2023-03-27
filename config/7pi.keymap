@@ -147,7 +147,7 @@
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
     	};
-		u_num u_num {
+		u_num: u_num {
       		compatible = "zmk,behavior-hold-tap";
       		label = "u_num";
       		#binding-cells = <2>;
