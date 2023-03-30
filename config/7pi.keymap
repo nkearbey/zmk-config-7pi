@@ -205,21 +205,21 @@
 		bindings = <
 		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp TAB         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
         &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
-                                                    &kp SPACE           &none           &sl ALP2U       &kp BSPC
+                                                    &u_lt NAV SPACE     &htog_tsl NUM ALP1              &sl ALP2U       &u_lt SYM BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
 		&kp BSLH    &kp Z       &kp X       &kp L        &kp TAB          &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
         &kp B       &kp P       &kp F       &kp G                                         &kp M       &kp V       &kp K       &kp J
-                                            &kp SPACE    &sl ALP2U        &none           &kp BSPC
+                                            &u_lt NAV SPACE    &htog_tsl NUM ALP2U        &sl ALP1        &u_lt SYM BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp TAB        &kp ENTER       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
+		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp TAB           &kp ENTER       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
         &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)     &kp LS(V)   &kp LS(K)       &kp LS(J)
-                                                        &kp SPACE        &none          &none           &kp BSPC
+                                                        &u_lt NAV SPACE        &htog_tsl NUM ALP2          &sl ALP1U           &u_lt SYM BSPC
 		>;
 		};
        	NUM {
@@ -247,7 +247,7 @@
 		bindings = <
 		&kp F5              &u_mt RALT F6      &kp F7              &kp F8            &none              &none               &none        &none        &kp RALT     &none    
         &u_mt LGUI F1       &u_mt LALT F2      &u_mt LCTRL F3      &u_mt LSHFT F4                                           &u_mt LSHFT F9       &u_mt LCTRL F10      &u_mt LALT F11      &u_mt LGUI F12
-                                             &tog FUN      &tog FUN	        &tog FUN         &tog FUN
+                                               &tog FUN      &tog FUN	        &tog FUN         &tog FUN
 		>;
 		};
     };
