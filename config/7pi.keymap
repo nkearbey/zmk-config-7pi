@@ -178,7 +178,7 @@
       		#binding-cells = <2>;
       		tapping_term_ms = <221>;
       		flavor = "tap-preferred";
-      		bindings = <&tog>, <&kp;
+      		bindings = <&tog>, <&kp>;
     	};
 		td: tapdance {
             compatible = "zmk,behavior-hold-tap";
