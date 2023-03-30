@@ -30,6 +30,12 @@
             #binding-cells = <0>;
             bindings = <&kp ENTER &tog NUM>;
         };
+		zmtab: zmtab {
+            label = "ZM_zmtab";
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp tab>;
+        };
     };
 
 	combos {
@@ -142,29 +148,37 @@
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
     	};
-		u_num: u_num {
+		htab_tkp: htab_tkp {
       		compatible = "zmk,behavior-hold-tap";
-      		label = "u_num";
+      		label = "htab_tkp";
+      		#binding-cells = <2>;
+      		tapping_term_ms = <201>;
+      		flavor = "tap-preferred";
+      		bindings = <&zmtab>, <&kp>;
+    	};
+		spc_num: spc_num {
+      		compatible = "zmk,behavior-hold-tap";
+      		label = "spc_num";
       		#binding-cells = <2>;
       		tapping_term_ms = <201>;
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&space_togNUM>;
     	};
-		htog_tsl: u_num {
+		htog_tsl: htog_tsl {
       		compatible = "zmk,behavior-hold-tap";
-      		label = "u_num";
+      		label = "htog_tsl";
       		#binding-cells = <2>;
       		tapping_term_ms = <221>;
       		flavor = "tap-preferred";
       		bindings = <&tog>, <&sl>;
     	};
-		htog_tk: u_num {
+		htog_tkp: htog_tkp {
       		compatible = "zmk,behavior-hold-tap";
-      		label = "u_num";
+      		label = "htog_tkp";
       		#binding-cells = <2>;
       		tapping_term_ms = <221>;
       		flavor = "tap-preferred";
-      		bindings = <&tog>, <&sl>;
+      		bindings = <&tog>, <&kp;
     	};
 		td: tapdance {
             compatible = "zmk,behavior-hold-tap";
@@ -189,30 +203,30 @@
         };
 		ALP1U {
 		bindings = <
-		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp DEL         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
+		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp TAB         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
         &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
                                                     &kp SPACE           &none           &sl ALP2U       &kp BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
-		&kp BSLH    &kp Z       &kp X       &kp L        &kp DEL          &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
+		&kp BSLH    &kp Z       &kp X       &kp L        &kp TAB          &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
         &kp B       &kp P       &kp F       &kp G                                         &kp M       &kp V       &kp K       &kp J
                                             &kp SPACE    &sl ALP2U        &none           &kp BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp DEL        &kp ENTER       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
+		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp TAB        &kp ENTER       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
         &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                       &kp LS(M)     &kp LS(V)   &kp LS(K)       &kp LS(J)
                                                         &kp SPACE        &none          &none           &kp BSPC
 		>;
 		};
        	NUM {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &kp N8            &kp N9           &enter_togNUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
+		&kp N5       &kp N6      &kp N7      &kp N8            &htab_tkp 0 N9           &enter_togNUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
         &kp N1       &kp N2      &kp N3      &kp N4                                             &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &u_num NAV 0      &htog_tk NUM N0  &kp DEL         &u_lt SYM BSPC
+                                             &spc_num NAV 0    &htog_tkp NUM N0  &kp DEL         &u_lt SYM BSPC
 		>;
 		};
 		NAV {
