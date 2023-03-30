@@ -219,14 +219,14 @@
 		bindings = <
 		&bootloader  &kp RALT     &none       &none        &kp ESC        &kp ENTER       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
         &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
-                                              &kp SPACE    &kp TAB        &kp DEL         &kp BSPC
+                                              &none        &kp TAB        &kp DEL         &kp BSPC
 		>;
 		};
 		SYM {
 		bindings = <
 		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &kp GRAVE        &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
         &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                                 &kp TILDE    &kp UNDERSCORE   &kp DEL         &kp BSPC
+                                                 &u_mt SPACE TILDE    &u_mt ESC UNDERSCORE   &kp DEL         &none
 		>;
 		};
        	FUN {
