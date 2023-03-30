@@ -34,7 +34,7 @@
             label = "ZM_zmtab";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp tab &none>;
+            bindings = <&kp TAB>;
         };
     };
 
