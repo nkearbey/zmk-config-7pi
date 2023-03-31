@@ -193,7 +193,6 @@
 
     keymap {
     	compatible = "zmk,keymap";
-        
        	ALP1 {
 		bindings = <
 		&kp Q               &hKp_tKp RALT W        &kp C               &hKp_tKp LSHFT D             &kp TAB        &kp ENTER   &hKp_tKp LSHFT H            &kp U            &hKp_tKp RALT Y     &kp SQT
@@ -226,7 +225,7 @@
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8            &hTab_tKp 0 N9           &ENT_tog_NUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
         &kp N1       &kp N2      &kp N3      &hKp_tKp LSHFT N4                                             &hKp_tKp LSHFT EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &lt_macro1 NAV SPC_tog_NUM   &hTog_tKp NUM N0  &kp DEL         &lt SYM BSPC
+                                             &lt_macro1 NAV 0   &hTog_tKp NUM N0  &kp DEL         &lt SYM BSPC
 		>;
 		};
 		NAV {
