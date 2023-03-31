@@ -132,17 +132,17 @@
 	};
 
     behaviors {
-		lt: lt {
+		l_t: l_t {
       		compatible = "zmk,behavior-hold-tap";
-      		label = "lt";
+      		label = "l_t";
       		#binding-cells = <2>;
       		tapping_term_ms = <201>;
       		flavor = "tap-preferred";
       		bindings = <&mo>, <&kp>;
     	};
-		lt_macro1: lt_macro1 {
+		l_tMacro1: l_tMacro1 {
       		compatible = "zmk,behavior-hold-tap";
-      		label = "lt_macro1";
+      		label = "l_tMacro1";
       		#binding-cells = <2>;
       		tapping_term_ms = <201>;
       		flavor = "tap-preferred";
@@ -196,36 +196,36 @@
        	ALP1 {
 		bindings = <
 		&kp Q               &hKp_tKp RALT W        &kp C               &hKp_tKp LSHFT D             &kp TAB        &kp ENTER   &hKp_tKp LSHFT H            &kp U            &hKp_tKp RALT Y     &kp SQT
-        &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &lt NUM T     							               &lt NUM N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
-                                                              &lt NAV SPACE   &hTog_tSl NUM ALP1U      &sl ALP2        &lt SYM BSPC
+        &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &l_t NUM T     							               &l_t NUM N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
+                                                              &l_t NAV SPACE   &hTog_tSl NUM ALP1U      &sl ALP2        &l_t SYM BSPC
 		>;
         };
 		ALP1U {
 		bindings = <
 		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp TAB         &kp ENTER       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
         &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
-                                                    &lt NAV SPACE     &hTog_tSl NUM ALP1              &sl ALP2U       &lt SYM BSPC
+                                                    &l_t NAV SPACE     &hTog_tSl NUM ALP1              &sl ALP2U       &l_t SYM BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
 		&kp BSLH    &kp Z       &kp X       &kp L        &kp TAB          &kp ENTER       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
         &kp B       &kp P       &kp F       &kp G                                         &kp M       &kp V       &kp K       &kp J
-                                            &lt NAV SPACE    &hTog_tSl NUM ALP2U        &sl ALP1        &lt SYM BSPC
+                                            &l_t NAV SPACE    &hTog_tSl NUM ALP2U        &sl ALP1        &l_t SYM BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
 		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp TAB           &kp ENTER       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
         &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                          &kp LS(M)     &kp LS(V)   &kp LS(K)       &kp LS(J)
-                                                        &lt NAV SPACE &hTog_tSl NUM ALP2 &sl ALP1U       &lt SYM BSPC
+                                                        &l_t NAV SPACE &hTog_tSl NUM ALP2 &sl ALP1U       &l_t SYM BSPC
 		>;
 		};
        	NUM {
 		bindings = <
 		&kp N5       &kp N6      &kp N7      &kp N8            &hTab_tKp 0 N9           &ENT_tog_NUM   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET    
         &kp N1       &kp N2      &kp N3      &hKp_tKp LSHFT N4                                             &hKp_tKp LSHFT EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                             &lt_macro1 NAV 0   &hTog_tKp NUM N0  &kp DEL         &lt SYM BSPC
+                                             &l_tMacro1 NAV 0   &hTog_tKp NUM N0  &kp DEL         &l_t SYM BSPC
 		>;
 		};
 		NAV {
