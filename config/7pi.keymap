@@ -195,7 +195,7 @@
     	compatible = "zmk,keymap";
        	ALP1 {
 		bindings = <
-		&kp Q               &hKp_tKp RALT W        &kp C               &l_t NUM D             &kp TAB        &kp ENTER   &l_t NUM H            &kp U            &hKp_tKp RALT Y     &kp SQT
+		&kp Q               &hKp_tKp RALT W        &kp C               &l_t NUM D             &td TAB LC(ESC)      &kp ENTER   &l_t NUM H            &kp U            &hKp_tKp RALT Y     &kp SQT
         &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &hKp_tKp LSHFT T     							               &hKp_tKp LSHFT N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
                                                               &l_t NAV SPACE   &hTog_tSl NUM ALP1U      &sl ALP2        &l_t SYM BSPC
 		>;
