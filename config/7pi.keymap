@@ -196,49 +196,49 @@
     	compatible = "zmk,keymap";
        	ALP1 {
 		bindings = <
-		&kp Q               &hKp_tKp RALT W        &kp C               &l_t SYM D             &kp none         &kp none                &l_t SYM H          &kp U             &hKp_tKp RALT Y      &l_t FUN SQT
+		&kp Q               &hKp_tKp RALT W        &kp C               &l_t SYM D             &none         &none                &l_t SYM H          &kp U             &hKp_tKp RALT Y      &l_t FUN SQT
         &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &hKp_tKp LSHFT T     							               &hKp_tKp LSHFT N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
                                                                        &l_t NAV SPACE   	  &sl ALP1U        &sl ALP2        &l_t NUM BSPC
 		>;
         };
 		ALP1U {
 		bindings = <
-		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &kp none         &kp none       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
+		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &none         &none       &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
         &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
                                                     &l_t NAV SPACE     &hTog_tSl NUM ALP1              &sl ALP2U       &l_t SYM BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
-		&kp BSLH    &kp Z       &kp X       &kp L        &kp none          &kp none       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
+		&kp BSLH    &kp Z       &kp X       &kp L        &none          &none       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
         &kp B       &kp P       &kp F       &kp G                                         &kp M       &kp V       &kp K       &kp J
                                             &l_t NAV SPACE    &hTog_tSl NUM ALP2U        &sl ALP1        &l_t SYM BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &kp none           &kp none       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
+		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &none           &none       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
         &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                          &kp LS(M)     &kp LS(V)   &kp LS(K)       &kp LS(J)
                                                         &l_t NAV SPACE &hTog_tSl NUM ALP2 &sl ALP1U       &l_t SYM BSPC
 		>;
 		};
        	NUM {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &hTab_tKp 0 N8      &kp none          &kp none   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET
+		&kp N5       &kp N6      &kp N7      &hTab_tKp 0 N8      &none          &none   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET
 		&hKp_tKp LGUI N1     &hKp_tKp LALT N2     &hKp_tKp LCTRL N3   &hKp_tKp LSHFT N4  &hKp_tKp LSHFT EQUAL &hKp_tKp LCTRL STAR    &hKp_tKp LALT MINUS     &hKp_tKp LGUI PLUS
                                              &l_t NAV SPACE   &kp N0        &kp DEL         &l_t SYM BSPC
 		>;
 		};
 		NAV {
 		bindings = <
-		&bootloader  &kp RALT     &none       &none        &kp none         &kp none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+		&bootloader  &kp RALT     &none       &none        &none         &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
         &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                                               &none        &kp TAB        &kp DEL         &kp BSPC
 		>;
 		};
 		SYM {
 		bindings = <
-		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &kp none         &kp none       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
+		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &none         &none       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
         &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
                                                  &hKp_tKp SPACE TILDE    &hKp_tKp ESC UNDERSCORE     &kp DEL         &none
 		>;
