@@ -36,29 +36,29 @@
 		combo_9 {
 			timeout-ms = <50>;
 			key-positions = <3 13>;
-			bindings = <&kp N9>;
+			bindings = <&hTab_tKp 0 N9>;
 			layers = <4>;
-		};
-		combo_esc {
-			timeout-ms = <50>;
-			key-positions = <3 13>;
-			bindings = <&kp ESC>;
-			layers = <0 1 2 3 5>;
-		};
-		combo_del {
-			timeout-ms = <50>;
-			key-positions = <6 14>;
-			bindings = <&kp DEL>;
-		};
-		combo_enter {
-        	timeout-ms = <50>;
-            key-positions = <20 21>;
-        	bindings = <&kp ENTER>;
 		};
 		combo_tab {
 			timeout-ms = <50>;
-			key-positions = <18 19>;
+			key-positions = <3 13>;
 			bindings = <&kp TAB>;
+			layers = <0 1 2 3 5>;
+		};
+		combo_enter {
+			timeout-ms = <50>;
+			key-positions = <6 14>;
+			bindings = <&kp enter>;
+		};
+		combo_del {
+        	timeout-ms = <50>;
+            key-positions = <20 21>;
+        	bindings = <&kp del>;
+		};
+		combo_esc {
+			timeout-ms = <50>;
+			key-positions = <18 19>;
+			bindings = <&kp ESC>;
 			layers = <0 1 2 3 5>;
 		};
 		combo_undo {
@@ -246,7 +246,7 @@
 		bindings = <
 		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &none         &none       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
         &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                                 &hKp_tKp SPACE TILDE    &hKp_tKp ESC UNDERSCORE     &kp DEL         &none
+                                                 &hKp_tKp SPACE TILDE    &hKp_tKp ESC UNDERSCORE     &kp DEL         &kp BSPC
 		>;
 		};
        	FUN {
