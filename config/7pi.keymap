@@ -13,8 +13,8 @@
 
 / {
 	macros {
-		altFUN: altFUN {
-			label = "ZM_altFUN";
+		macroaltFUN: macroaltFUN {
+			label = "ZM_macroaltFUN";
 			compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
 			wait-ms = <0>;
@@ -161,7 +161,7 @@
       		#binding-cells = <2>;
       		tapping_term_ms = <201>;
       		flavor = "tap-preferred";
-      		bindings = <&macroTAB>, <&kp>;
+      		bindings = <&macroaltFUN>, <&kp>;
     	};
 		hTog_tSl: hTog_tSl {
       		compatible = "zmk,behavior-hold-tap";
