@@ -194,30 +194,30 @@
     	compatible = "zmk,keymap";
        	ALP1 {
 		bindings = <
-		&hAltFUN_tkp 0 Q               &hKp_tKp RALT W        &kp C               &l_t SYM D             &none         &none                &l_t SYM H          &kp U             &hKp_tKp RALT Y      &l_t FUN SQT
-        &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &hKp_tKp LSHFT T     							               &hKp_tKp LSHFT N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
+		&hAltFUN_tkp 0 Q    &hKp_tKp RALT W     &kp C    			   &l_t SYM D             &none            &none           &l_t SYM H          &kp U             &hKp_tKp RALT Y      &l_t FUN SQT
+        &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &hKp_tKp LSHFT T     							       &hKp_tKp LSHFT N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
                                                                        &l_t NAV SPACE   	  &sl ALP1U        &sl ALP2        &l_t NUM BSPC
 		>;
         };
 		ALP1U {
 		bindings = <
-		&kp LS(Q)   &kp LS(W)       &kp LS(C)       &kp LS(D)           &none         &none      		 &kp LS(H)   &kp LS(U)   &kp LS(Y)       &kp LS(SQT)
-        &kp LS(A)   &kp LS(R)       &kp LS(S)       &kp LS(T)                                           &kp LS(N)   &kp LS(E)   &kp LS(I)       &kp LS(O)
-                                                    &l_t NAV SPACE     &hTog_tSl NUM ALP1              &sl ALP2U       &l_t SYM BSPC
+		&hAltFUN_tkp 0 LS(Q)   &hKp_tKp RALT LS(W)       &kp LS(C)       &l_t SYM LS(D)           &none         &none      	   &l_t SYM LS(H)   &kp LS(U)   &hKp_tKp RALT LS(Y)         &l_t FUN LS(SQT)
+        &hKp_tKp LGUI LS(A)   &hKp_tKp LALT LS(R)   &hKp_tKp LCTRL LS(S)     &hKp_tKp LSHFT LS(T)          &hKp_tKp LSHFT LS(N)        &hKp_tKp LCTRL LS(E)   &hKp_tKp LALT LS(I)       &hKp_tKp LGUI LS(O)
+                                                    &l_t NAV SPACE           &sl ALP1      &sl ALP2U       &l_t NUM BSPC
 		>;
 		};
 		ALP2 {
 		bindings = <
-		&kp BSLH    &kp Z       &kp X       &kp L        &none          &none       &kp COMMA   &kp DOT     &kp FSLH    &kp SEMI
-        &kp B       &kp P       &kp F       &kp G                                         &kp M       &kp V       &kp K       &kp J
-                                            &l_t NAV SPACE    &hTog_tSl NUM ALP2U        &sl ALP1        &l_t SYM BSPC
+		&hAltFUN_tkp 0 BSLH    &hKp_tKp RALT Z       &kp X       &l_t SYM L        &none          &none       &l_t SYM COMMA   &kp DOT     &hKp_tKp RALT FSLH    &l_t FUN SEMI
+        &hKp_tKp LGUI B       &hKp_tKp LALT P       &hKp_tKp LCTRL F       &hKp_tKp LSHFT G       &hKp_tKp LSHFT M       &hKp_tKp LCTRL V       &hKp_tKp LALT K       &hKp_tKp LGUI J
+                                            &l_t NAV SPACE     &sl ALP2U         &sl ALP1        &l_t NUM BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&kp LS(BSLH)    &kp LS(Z)       &kp LS(X)       &kp LS(L)        &none           &none       &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)    &kp LS(SEMI)
-        &kp LS(B)       &kp LS(P)       &kp LS(F)       &kp LS(G)                                          &kp LS(M)     &kp LS(V)   &kp LS(K)       &kp LS(J)
-                                                        &l_t NAV SPACE &hTog_tSl NUM ALP2 &sl ALP1U       &l_t SYM BSPC
+		&hAltFUN_tkp 0 LS(BSLH)    &hKp_tKp RALT LS(Z)       &kp LS(X)       &l_t SYM LS(L)        &none           &none       &l_t SYM LS(COMMA) &kp LS(DOT) &hKp_tKp RALT LS(FSLH)    &l_t FUN LS(SEMI)
+        &hKp_tKp LGUI LS(B)       &hKp_tKp LALT LS(P)       &hKp_tKp LCTRL LS(F)       &hKp_tKp LSHFT LS(G)        &hKp_tKp LSHFT LS(M)     &hKp_tKp LCTRL LS(V)   &hKp_tKp LALT LS(K)       &hKp_tKp LGUI LS(J)
+                                                        &l_t NAV SPACE   &sl ALP2   &sl ALP1U       &l_t NUM BSPC
 		>;
 		};
        	NUM {
@@ -229,7 +229,7 @@
 		};
 		NAV {
 		bindings = <
-		&bootloader  &kp RALT     &none       &none        &none         &none       &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+		&bootloader  &kp RALT     &none       &none        &none          &none           &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
         &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                                               &none        &kp TAB        &kp DEL         &kp BSPC
 		>;
@@ -238,14 +238,14 @@
 		bindings = <
 		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &none         &none       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
         &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
-                                                 &hKp_tKp SPACE TILDE    &hKp_tKp ESC UNDERSCORE     &kp DEL         &kp BSPC
+                                                 &kp TILDE    &kp UNDERSCORE     &kp DEL         &kp BSPC
 		>;
 		};
        	FUN {
 		bindings = <
 		&kp F5              &hKp_tKp RALT F6      &kp F7              &kp F8            &none              &none               &none        &none        &kp RALT     &none    
         &hKp_tKp LGUI F1       &hKp_tKp LALT F2      &hKp_tKp LCTRL F3      &hKp_tKp LSHFT F4                                           &hKp_tKp LSHFT F9       &hKp_tKp LCTRL F10      &hKp_tKp LALT F11      &hKp_tKp LGUI F12
-                                               &kp ESC      &kp TAB	        &kp ENTER         &kp DEL
+                                                         &kp ESC      &kp TAB	        &kp ENTER         &kp DEL
 		>;
 		};
     };
