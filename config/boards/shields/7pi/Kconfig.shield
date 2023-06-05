@@ -1,6 +1,2 @@
-config SHIELD_7PI_LEFT
-	def_bool $(shields_list_contains,7pi_left)
-
-config SHIELD_7PI_RIGHT
-	def_bool $(shields_list_contains,7pi_right)
-	
+config SHIELD_7PI
+	def_bool $(shields_list_contains,7pi)

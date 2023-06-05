@@ -1,19 +1,5 @@
 # Copyright (c) 2022 The ZMK Contributors
 # SPDX-License-Identifier: MIT
 
-if SHIELD_7PI_LEFT
-
-config ZMK_KEYBOARD_NAME
-	default "7pi"
-
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-
-endif
-
-if SHIELD_7PI_LEFT || SHIELD_7PI_RIGHT
-
-config ZMK_SPLIT
-	default y
-
-endif
+config SHIELD_7PI
+default "7pi"
