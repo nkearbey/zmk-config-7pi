@@ -1,13 +1,5 @@
 include:
-  - board: raytac_mdbt50q_rx
-    shield: 7pi_dongle
-  - board: seeeduino_xiao_ble
-    shield: 7pi_dongle_left
-  - board: seeeduino_xiao_ble
-    shield: 7pi_dongle_right
   - board: seeeduino_xiao_ble
     shield: 7pi_left
   - board: seeeduino_xiao_ble
     shield: 7pi_right
-  - board: seeeduino_xiao_ble
-    shield: settings_reset
