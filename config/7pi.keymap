@@ -35,77 +35,77 @@
 		compatible = "zmk,combos";
 		combo_9 {
 			timeout-ms = <50>;
-			key-positions = <3 13>;
+			key-positions = <3 11>;
 			bindings = <&hTab_tKp 0 N9>;
 			layers = <4>;
 		};
 		combo_tab {
 			timeout-ms = <50>;
-			key-positions = <3 13>;
+			key-positions = <3 11>;
 			bindings = <&kp TAB>;
 			layers = <0 1 2 3 5>;
 		};
 		combo_enter {
 			timeout-ms = <50>;
-			key-positions = <6 14>;
+			key-positions = <4 12>;
 			bindings = <&kp ENTER>;
 		};
 		combo_del {
         	timeout-ms = <50>;
-            key-positions = <20 21>;
+            key-positions = <18 19>;
         	bindings = <&kp DEL>;
 		};
 		combo_esc {
 			timeout-ms = <50>;
-			key-positions = <18 19>;
+			key-positions = <16 17>;
 			bindings = <&kp ESC>;
 			layers = <0 1 2 3 5>;
 		};
 		combo_undo {
 			timeout-ms = <50>;
-			key-positions = <0 12>;
+			key-positions = <0 10>;
 			bindings = <&kp LC(Z)>;
 		};
 		combo_cut {
 			timeout-ms = <50>;
-			key-positions = <1 12>;
+			key-positions = <1 10>;
 			bindings = <&kp LC(X)>;
 		};
 		combo_copy {
 			timeout-ms = <50>;
-			key-positions = <2 12>;
+			key-positions = <2 10>;
 			bindings = <&kp LC(C)>;
 		};
 		combo_paste {
 			timeout-ms = <50>;
-			key-positions = <3 12>;
+			key-positions = <3 10>;
 			bindings = <&kp LC(V)>;
 		};
 		combo_redo {
 			timeout-ms = <50>;
-			key-positions = <6 12>;
+			key-positions = <4 10>;
 			bindings = <&kp LC(Y)>;
 		};
 		combo_find {
 			timeout-ms = <50>;
-			key-positions = <7 15>;
+			key-positions = <5 13>;
 			bindings = <&kp LC(F)>;
 			layers = <0 1 2 3>;
 		};
 		combo_print {
 			timeout-ms = <50>;
-			key-positions = <6 15>;
+			key-positions = <4 13>;
 			bindings = <&kp LC(P)>;
 			layers = <0 1 2 3>;
 		};
 		combo_lp {
 			timeout-ms = <50>;
-			key-positions = <10 11>;
+			key-positions = <8 9>;
 			bindings = <&kp LPAR>;
 		};
 		combo_rp {
 			timeout-ms = <50>;
-			key-positions = <12 13>;
+			key-positions = <10 11>;
 			bindings = <&kp RPAR>;
 		};
 		combo_lbk {
@@ -120,12 +120,12 @@
 		};
 		combo_lbc {
 			timeout-ms = <50>;
-			key-positions = <6 7>;
+			key-positions = <4 5>;
 			bindings = <&kp LBRC>;
 		};
 		combo_rbc {
 			timeout-ms = <50>;
-			key-positions = <8 9>;
+			key-positions = <6 7>;
 			bindings = <&kp RBRC>;
 		};
 	};
@@ -194,7 +194,7 @@
     	compatible = "zmk,keymap";
        	ALP1 {
 		bindings = <
-		&hAltFUN_tkp 0 Q    &hKp_tKp RALT W     &kp C    			   &l_t SYM D             &none            &none           &l_t SYM H          &kp U             &hKp_tKp RALT Y      &l_t FUN SQT
+		&hAltFUN_tkp 0 Q    &hKp_tKp RALT W     &kp C    			   &l_t SYM D                                              &l_t SYM H          &kp U             &hKp_tKp RALT Y      &l_t FUN SQT
         &hKp_tKp LGUI A     &hKp_tKp LALT R     &hKp_tKp LCTRL S       &hKp_tKp LSHFT T     							       &hKp_tKp LSHFT N    &hKp_tKp LCTRL E    &hKp_tKp LALT I     &hKp_tKp LGUI O
                                                                        &l_t NAV SPACE   	  &sl ALP1U        &sl ALP2        &l_t NUM BSPC
 		>;
@@ -208,42 +208,42 @@
 		};
 		ALP2 {
 		bindings = <
-		&hAltFUN_tkp 0 BSLH    &hKp_tKp RALT Z       &kp X       &l_t SYM L        &none          &none       &l_t SYM COMMA   &kp DOT     &hKp_tKp RALT FSLH    &l_t FUN SEMI
+		&hAltFUN_tkp 0 BSLH    &hKp_tKp RALT Z       &kp X       &l_t SYM L                        &l_t SYM COMMA   &kp DOT     &hKp_tKp RALT FSLH    &l_t FUN SEMI
         &hKp_tKp LGUI B       &hKp_tKp LALT P       &hKp_tKp LCTRL F       &hKp_tKp LSHFT G       &hKp_tKp LSHFT M       &hKp_tKp LCTRL V       &hKp_tKp LALT K       &hKp_tKp LGUI J
                                             &l_t NAV SPACE     &sl ALP2U         &sl ALP1        &l_t NUM BSPC
 		>;
 		};
        	ALP2U {
 		bindings = <
-		&hAltFUN_tkp 0 LS(BSLH)    &hKp_tKp RALT LS(Z)       &kp LS(X)       &l_t SYM LS(L)        &none           &none       &l_t SYM LS(COMMA) &kp LS(DOT) &hKp_tKp RALT LS(FSLH)    &l_t FUN LS(SEMI)
+		&hAltFUN_tkp 0 LS(BSLH)    &hKp_tKp RALT LS(Z)       &kp LS(X)       &l_t SYM LS(L)            &l_t SYM LS(COMMA) &kp LS(DOT) &hKp_tKp RALT LS(FSLH)    &l_t FUN LS(SEMI)
         &hKp_tKp LGUI LS(B)       &hKp_tKp LALT LS(P)       &hKp_tKp LCTRL LS(F)       &hKp_tKp LSHFT LS(G)        &hKp_tKp LSHFT LS(M)     &hKp_tKp LCTRL LS(V)   &hKp_tKp LALT LS(K)       &hKp_tKp LGUI LS(J)
                                                         &l_t NAV SPACE   &sl ALP2   &sl ALP1U       &l_t NUM BSPC
 		>;
 		};
        	NUM {
 		bindings = <
-		&kp N5       &kp N6      &kp N7      &hTab_tKp 0 N8      &none          &none   &kp COMMA   &kp DOT     &kp FSLH    &kp CARET
+		&kp N5       &kp N6      &kp N7      &hTab_tKp 0 N8        &kp COMMA   &kp DOT     &kp FSLH    &kp CARET
 		&hKp_tKp LGUI N1     &hKp_tKp LALT N2     &hKp_tKp LCTRL N3   &hKp_tKp LSHFT N4  &hKp_tKp LSHFT EQUAL &hKp_tKp LCTRL STAR    &hKp_tKp LALT MINUS     &hKp_tKp LGUI PLUS
                                              &l_t NAV SPACE   &kp N0        &kp DEL         &l_t SYM BSPC
 		>;
 		};
 		NAV {
 		bindings = <
-		&bootloader  &kp RALT     &none       &none        &none          &none           &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
+		&bootloader  &kp RALT     &none       &none                &kp HOME    &kp PG_DN   &kp PG_UP   &kp END
         &kp LGUI     &kp LALT     &kp LCTRL   &kp LSHFT                                   &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT
                                               &none        &kp TAB        &kp DEL         &kp BSPC
 		>;
 		};
 		SYM {
 		bindings = <
-		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK    &none         &none       &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
+		&kp PRCNT     &kp CARET    &kp AMPERSAND &kp ASTRK      &kp COMMA   &kp DOT     &kp FSLH    &kp CARET  
         &kp EXCL      &kp AT       &kp HASH      &kp DLLR                                      &kp EQUAL   &kp STAR    &kp MINUS   &kp PLUS
                                                  &kp TILDE    &kp UNDERSCORE     &kp DEL         &kp BSPC
 		>;
 		};
        	FUN {
 		bindings = <
-		&kp F5              &hKp_tKp RALT F6      &kp F7              &kp F8            &none              &none               &none        &none        &kp RALT     &none    
+		&kp F5              &hKp_tKp RALT F6      &kp F7              &kp F8                         &none        &none        &kp RALT     &none    
         &hKp_tKp LGUI F1       &hKp_tKp LALT F2      &hKp_tKp LCTRL F3      &hKp_tKp LSHFT F4                                           &hKp_tKp LSHFT F9       &hKp_tKp LCTRL F10      &hKp_tKp LALT F11      &hKp_tKp LGUI F12
                                                          &kp ESC      &kp TAB	        &kp ENTER         &kp DEL
 		>;
