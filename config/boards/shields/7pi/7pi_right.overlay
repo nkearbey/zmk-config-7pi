@@ -1,5 +1,0 @@
-#include "7pi.dtsi"
-
-&default_transform {
-	col-offset = <11>;
-};
