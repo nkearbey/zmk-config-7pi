@@ -201,7 +201,7 @@
         };
 		ALP1U {
 		bindings = <
-		&hAltFUN_tkp 0 LS(Q)   &hKp_tKp RALT LS(W)       &kp LS(C)       &l_t SYM LS(D)           &none         &none      	   &l_t SYM LS(H)   &kp LS(U)   &hKp_tKp RALT LS(Y)         &l_t FUN LS(SQT)
+		&hAltFUN_tkp 0 LS(Q)   &hKp_tKp RALT LS(W)       &kp LS(C)       &l_t SYM LS(D)              	   &l_t SYM LS(H)   &kp LS(U)   &hKp_tKp RALT LS(Y)         &l_t FUN LS(SQT)
         &hKp_tKp LGUI LS(A)   &hKp_tKp LALT LS(R)   &hKp_tKp LCTRL LS(S)     &hKp_tKp LSHFT LS(T)          &hKp_tKp LSHFT LS(N)        &hKp_tKp LCTRL LS(E)   &hKp_tKp LALT LS(I)       &hKp_tKp LGUI LS(O)
                                                     &l_t NAV SPACE           &sl ALP1      &sl ALP2U       &l_t NUM BSPC
 		>;
